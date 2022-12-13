@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+#header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+ .container{
+    padding: 46px 10%;
+} 
+#title h1 span{
+   font-family: 'Love Ya Like A Sister', cursive; 
+}
+nav{
+    width: 100vh;
+    position: fixed;
+    -webkit-transform: rotate(90deg)translateX(85%);
+    -webkit-transform-origin: right top;
+    right: 0;
+    text-align: center;
+    z-index: 1000;
+    opacity: 60%;
+}
+h1 span{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    padding-left: 565px;
+    background-color:#000;
+    letter-spacing: 17.5px;
+    word-spacing: 7.5px;
+}
+    h1 img{
+        position: fixed;
+    }   
+h1 span img{
+        position: relative;
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+    padding-right: 0px;
+    background-color: #000;
+    width: 100vh;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 18px;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    font-size: 25px;
+    letter-spacing: 0.0em;
+    padding: 5px 1px;
+    padding-left: 15px;
+    transition: 0.5s; 
+    font-family: 'Just Me Again Down Here', cursive;
+}
+nav ul li a:hover
+{
+    letter-spacing: 0.1em;
+    background: var(--clr);
+    box-shadow: 0 0 95px var(--clr);
+}
+nav ul li a::before
+{
+   content: '';
+   position: absolute;
+   inset:  2px;
+   background: #000;
+}
+nav ul li a span
+{
+    position: relative;
+    z-index: 1;
+}
+nav ul li a 1
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+nav ul li a 1::before
+{
+content: '';
+position: absolute;
+top: -3.5px;
+ left: 80%;
+ width: 10px;
+ height: 5px;
+ border: 2px solid var(--clr);
+ background: #000;
+ transform: translateX(-50%);
+ transition: 0.5s;
+    
+}
+nav ul li a:hover i::before
+{
+    width: 20px;
+    left ; 20%;
+}
+nav ul li a 1::after
+{
+content: '';
+position: absolute;
+bottom: -3.5px;
+ left: 80%;
+ width: 10px;
+ height: 5px;
+ border: 2px solid var(--clr);
+ background: #000;
+ transform: translateX(-50%);
+ transition: 0.5s;
+}
+nav ul li a:hover i::after
+{
+    width: 20px;
+    left: 80%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 30px; 
+    padding-top: -90px;
+}
+.header-text h1{
+    font-size: 50px;
+    margin-top: 20px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    padding-left: -10px; 
+    padding-top: -90px;
+    color: burlywood;
+}
+.btn{
+    display: block;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin: 10px auto;
+    width: inherit;
+    border: 1px solid #000;
+    color: #000;
+    padding: 14px 40px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 2.5s;
+}
+
+.btn:hover{
+    background: #ff004f;
+    color: #000;
+    transform: translateY(-12px);
+    cursor: pointer;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #FF6347;
+    color: #000;
+    align-self: center;
+}
+.btn.btn3{
+    display: inline-block;
+    background: #BDB76B;
+    color: #000;
+    align-self: center;
+}
+.btn.btn4{
+    display: inline-block;
+    background: #3CB371;
+    color: #000;
+    align-self: center;
+}
+.btn.btn5{
+    display: inline-block;
+    background: #4682B4;
+    color: #000;
+    align-self: center;
+}
+.container .music-container{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+.container .music-container .box .image{
+    height: inherit;
+    width: 10%;
+}
+.container .music-container .box img{
+    height: 100%;
+    width: 100%;
+}
+.container .heading{
+    font-size: 28px;
+    padding; 2rem 0;
+    text-align: center;
+    font-family: 'Love Ya Like A Sister', cursive;
+    text-shadow: 0 .5rem 1rem #000;
+    color: #fff;
+}
+.container .music-container .box{
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    background:  linear-gradient(to top right, #003399 0%, #cc0000 100%);
+    border-radius: 1rem;
+    box-shadow: 0 .5rem 1rem #000;
+}
+.music-container h3{
+    color: #fff;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 15px;
+    padding-left: 40px;
+}
+.bubbles{
+    position: relative;
+    display: flex;  
+}
+.bubbles span{
+    position: relative;
+    width: 5px;
+    height:5px;
+    background: #E88AAD;
+    margin: 0 4px;
+    border-radius: 50px;
+    box-shadow: 0 0.3 0 10px #EFC1CA,
+    0 0 50px #E88AAD,
+    0 0 100px #5555FE;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(225s / var(--i));
+}
+
+.bubbles span:nth-child(even)
+{
+    background: #7EE5FE;
+    box-shadow: 0 0 0 10px #C2E5F2,
+    0 0 50px #7EE5FE,
+    0 0 100px #7EE5FE;
+}
+.bubbles span{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background: #5555FE;
+    margin: 0 4px;
+    border-radius: 50px;
+    box-shadow: 0 0.3 0 10px #58FA79,
+    0 0 50px #5555FE,
+    0 0 100px #5555FE;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(225s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #58FA79;
+    box-shadow: 0 0 0 10px #B8FBC5,
+    0 0 50px #58FA79,
+    0 0 100px #58FA79;
+}
+.bubbles span{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background: #F9F947;
+    margin: 0 4px;
+    border-radius: 50px;
+    box-shadow: 0 0.3 0 10px  #FAFA9C,
+    0 0 50px #F9F947,
+    0 0 100px #F9F947;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(445s / var(--i));
+}
+.bubbles span:nth-child(even)
+{
+    background: #F9F947;
+    box-shadow: 0 0 0 10px #FAFA9C,
+    0 0 50px #F9F947,
+    0 0 100px #F9F947;
+}
+.bubbles span:nth-child(even)
+{
+    background: #5555FE;
+    box-shadow: 0 0 0 10px #A3A3FE,
+    0 0 50px #5555FE,
+    0 0 100px #5555FE;
+}
+@keyframes animate
+{
+    0%{
+        transform: translateY(100vh) scale(0);
+}
+    100%{    
+        transform: translateY(-10vh) scale(1);
+}
+::-webkit-scrollbar{
+    background: #000;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(23,83,168,1) 0%, rgba(90,146,203,1) 50%, rgba(93,200,254,1) 100%);
+    border-radius: 10px;
+}
+
+nav2{
+    display: none;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+@media only screen and (max-width: 600px){
+   
+.header-text{
+    margin-top: 100%;
+    font-size: 16px; 
+    }
+  
+h1 span{
+     font-size: 15px;
+    }
+    .header-text h1{
+        font-size:16px;
+}   
+     nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+     nav ul{
+          display: none;
+        background: #B8FBC5;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display:block;
+        margin:25px;
+}
+    }
+    

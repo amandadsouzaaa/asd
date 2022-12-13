@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #000;
+}
+
+.vcontainer{
+    margin: -10px auto;
+    padding-right: 30px;
+    height: 600px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background: url(bgpics/nightsky1.jpg);
+    background-attachment: fixed;
+    justify-content: center;
+    animation: change 150s infinite ease-in-out;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(bgpics/nightsky1.jpg);
+    }
+     20%
+    {
+        background-image: url(bgpics/nightsky2.jpg);
+    }
+     40%
+    {
+        background-image: url(bgpics/nightsky3.jpg);
+    }
+     60%
+    {
+        background-image: url(bgpics/nightsky4.jpg);
+    }
+     80%
+    {
+        background-image: url(bgpics/nightsky5.jpg);
+    }
+    
+    
+    
+    
+}
+
+
+
+
+
+.vcontainer img{
+    padding-top: 80px;
+}
+.vcontainer h1{
+    padding: 60px 0;
+    color: #fff;
+    font-size: 44px;
+    font-family: 'Love Ya Like A Sister', cursive;
+}   
+
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .col{
+        flex-basis: 50%;
+        min-width: 500px;
+    } 
+    .feature-img{
+        width: 83%;
+        margin: auto;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .small-img-row{
+        display:flex;
+        background: #000;
+        margin: 20px 0;
+        align-items: center;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 85%;
+}
+::-webkit-scrollbar{
+    background: #000;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(90deg, rgba(23,83,168,1) 0%, rgba(90,146,203,1) 50%, rgba(93,200,254,1) 100%);
+    border-radius: 10px;
+}
+
+.small-img{
+    position: relative;
+}
+.small-img img{
+    width: 150px;
+    padding-top: 0;
+}
+
+.small-img-row p{
+    margin-left:20px;
+    color: #707070;
+    line-height: 22px;
+    font-size: 15px;
+    font-family: 'Klee One', cursive;
+}
+.vcontainer p{
+    margin-left:20px;
+    color: #fff;
+    line-height: 22px;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Klee One', cursive;
+}
+
+.play-btn{
+    width: 60px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+home-btn{
+    width: 60px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.small-img .play-btn{
+    width: 25px;
+}
+
+.video-player{
+    width: 50%;
+    position:absolute;
+    right: 30px;
+    top: 345vh;
+    transform: translate(-50%,-50%);
+    display: none;
+       
+}
+video: focus{
+    outline: none;
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

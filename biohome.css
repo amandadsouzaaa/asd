@@ -1,0 +1,55 @@
+#header{
+    position:absolute;
+    width: 100%;
+    height: 0vh;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    }
+
+    
+nav2{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+     background-image: url(images/phonebgg.jpg);
+    }
+ .header-text{
+    margin-top: 100%;
+    font-size: 16px; 
+    }
+    .copyright{
+     font-size: 6px;
+    }
+    h1 span{
+     font-size: 15px;
+
+    }
+    .header-text h1{
+     font-size:16px;
+}  
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+     nav ul{
+         display: none;
+        background: #B8FBC5;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+    nav ul li{
+        display:block;
+        margin:25px;
+  
+}
+     .bubbles{
+        display: none;
+    }
